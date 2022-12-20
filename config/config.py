@@ -1,7 +1,9 @@
-
+PAYMANT_TOKEN = 'test_b5Qx4NQ9xufGdn3bDYv6No4AZV_TGAPC1A29n9iL5Oo'
+SHOP_ID = '968439'
 
 BOT_TOKEN: str = '5981033563:AAF0JKJOMp5LflGXK2Y7GTeYFeBXvXlSCZQ'
-PAYMENT_TOKEN: str = '401643678:TEST:63a3552d-ab37-4303-9f1d-16efc02446e5'
+# PAYMENT_TOKEN: str = '390540012:LIVE:28972'
+ADMIN_ID = [696797613, 502602785] 
 
 
 MSG: dict[str, str] = {
@@ -12,7 +14,7 @@ MSG: dict[str, str] = {
 }
 
 
-DICTIONARY_PRESET: dict[str, str | int] = {
+DICTIONARY_PRESET: dict = {
     'combo': {
         'name': 'Combo',
         'photo_url': 'https://i.postimg.cc/pVCB5xWx/combo.jpg',
@@ -60,7 +62,7 @@ DICTIONARY_PRESET: dict[str, str | int] = {
         'photo_url': 'https://i.postimg.cc/Df9M57VG/cristmas-Mood.jpg',
         'photo_height': 720,
         'photo_width': 1280,
-        'photo_size': 125000,
+        'photo_size': 1250000,
         'file_name': 'BQACAgIAAxkBAAICnWOSAgf-CZobanHgYcp5v8UUgUq5AAIBKAACThqRSLQBtuTbpJUBKwQ'
     },
 

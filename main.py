@@ -18,5 +18,5 @@ async def shutdown(dp):
 
 
 if __name__=="__main__":
-    from heandler.handlers import dp
+    from heandler.handlers_users import dp
     executor.start_polling(dp, on_shutdown=shutdown)
