@@ -1,13 +1,14 @@
 import json
 from yookassa import Configuration,Payment
-from config.config import DICTIONARY_PRESET, SHOP_ID, PAYMENT_TOKEN
+from config.config import DICTIONARY_PRESET, SHOP_ID, PAYMENT_TOKEN, SHOP_ID_ADMIN, PAYMENT_TOKEN_ADMIN, ADMIN_ID
 import asyncio
 
 Configuration.account_id = SHOP_ID
 Configuration.secret_key = PAYMENT_TOKEN
 
-def payments(item,chat_id):
-	payment = Payment.create({
+def payments(item, chat_id):
+
+    payment = Payment.create({
     "amount": {
         "value": DICTIONARY_PRESET[item]['price'],
         "currency": "RUB"
@@ -22,9 +23,9 @@ def payments(item,chat_id):
     "metadata": {"chat_id": chat_id},
     "capture": True,
     "description": "Оплата пресета" + DICTIONARY_PRESET[item]['name']
-	})
+    })
 
-	return json.loads(payment.json())
+    return json.loads(payment.json())
 
 
 async def check_payment(payment_id, chat_id):
@@ -34,7 +35,7 @@ async def check_payment(payment_id, chat_id):
         payment = json.loads((Payment.find_one(payment_id)).json())
         await asyncio.sleep(3)
 
-    if payment['status']=='succeeded':
+    if payment['status']=='succeeded' and payment['metadata'] == chat_id:
         return True
     else:
         return False

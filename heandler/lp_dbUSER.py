@@ -20,9 +20,13 @@ class DataBase:
     async def check_presets(self, user_id):
         with self.connect:
             return self.cursor.execute("""SELECT presets FROM users WHERE user_id=(?)""",
+                                       [user_id]).fetchone()[0]
+    async def check_role_users(self, user_id):
+        with self.connect:
+            return self.cursor.execute("""SELECT role FROM users WHERE user_id=(?)""",
                                        [user_id]).fetchone()
-    
-    
+
+
     async def update_null_users(self, user_id):
         return self.cursor.execute(("""UPDATE users SET bouth=(?), label=(?), presets=(?) WHERE user_id=(?)""",
                                        [False,1,'', user_id]))
