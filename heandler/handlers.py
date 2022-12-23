@@ -27,7 +27,6 @@ product = DataBaseProducts('../lavka_preset/lavka_presets.db')
 @dp.message_handler(Command('message'))
 async def message_answer_check_admin(message: types.Message):
     if message.from_user.id in ADMIN_ID:
-        # await bot.send_message(message.chat.id, 'Введите свое сообщение ниже')
         id_users = await dbUser.import_id_users()
         for item in id_users:
                 try:
