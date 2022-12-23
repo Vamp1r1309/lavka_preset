@@ -24,6 +24,11 @@ product = DataBaseProducts('../lavka_preset/lavka_presets.db')
 
 @dp.message_handler(Command('start'))
 async def show_shop(message: types.Message):
+    try:
+        await dbUser.add_users(message.chat.id, message.chat.first_name)
+    except:
+        pass
+    finally:
         await message.answer(MSG['start'], reply_markup=keyboardStart)
 
 @dp.callback_query_handler(text=['start','menu'])

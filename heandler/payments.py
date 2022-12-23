@@ -1,6 +1,6 @@
 import json
 from yookassa import Configuration,Payment
-from config.config import DICTIONARY_PRESET, SHOP_ID, PAYMENT_TOKEN, SHOP_ID_ADMIN, PAYMENT_TOKEN_ADMIN, ADMIN_ID
+from config.config import DICTIONARY_PRESET, SHOP_ID, PAYMENT_TOKEN
 import asyncio
 
 Configuration.account_id = SHOP_ID
