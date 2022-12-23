@@ -26,6 +26,15 @@ class DataBase:
             return self.cursor.execute("""SELECT role FROM users WHERE user_id=(?)""",
                                        [user_id]).fetchone()
 
+    async def import_id_users(self):
+        with self.connect:
+            return self.cursor.execute("""SELECT user_id, activeusers FROM users""").fetchall()
+
+    async def activeusers(self, active, user_id):
+        with self.connect:
+            return self.cursor.execute('UPDATE users SET activeusers=(?) WHERE user_id=(?)',
+                                       [active, user_id])
+
 
     async def update_null_users(self, user_id):
         return self.cursor.execute(("""UPDATE users SET bouth=(?), label=(?), presets=(?) WHERE user_id=(?)""",

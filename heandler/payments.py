@@ -22,7 +22,7 @@ def payments(item, chat_id):
     },
     "metadata": {"chat_id": chat_id},
     "capture": True,
-    "description": "Оплата пресета" + DICTIONARY_PRESET[item]['name']
+    "description": "Оплата пресета " + DICTIONARY_PRESET[item]['name']
     })
 
     return json.loads(payment.json())
