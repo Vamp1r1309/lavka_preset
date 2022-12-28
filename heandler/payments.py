@@ -35,7 +35,7 @@ async def check_payment(payment_id, chat_id):
         payment = json.loads((Payment.find_one(payment_id)).json())
         await asyncio.sleep(3)
 
-    if payment['status']=='succeeded' and payment['metadata'] == chat_id:
+    if payment['status']=='succeeded':
         return True
     else:
         return False

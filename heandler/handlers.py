@@ -115,10 +115,10 @@ async def byu_proccess(callback: types.CallbackQuery):
             data = await dbUser.check_presets(callback.message.chat.id)
             await bot.send_message(
                                 callback.message.chat.id,
-                                MSG['successful'].format(DICTIONARY_PRESET[callback.data]['price'])
+                                MSG['successful'].format(DICTIONARY_PRESET[callback.data]['price_sell'][1])
                                 )
-            if type(DICTIONARY_PRESET[data[0]]['file_name']) == list:
-                res = DICTIONARY_PRESET[data[0]]['file_name']
+            if type(DICTIONARY_PRESET[data]['file_name']) == list:
+                res = DICTIONARY_PRESET[data]['file_name']
                 for item in res:
                     await bot.send_document(
                                             callback.message.chat.id,
@@ -127,7 +127,7 @@ async def byu_proccess(callback: types.CallbackQuery):
             else:
                 await bot.send_document(
                                         callback.message.chat.id,
-                                        document=DICTIONARY_PRESET[data[0]]['file_name']
+                                        document=DICTIONARY_PRESET[data]['file_name']
                                     )
 
         else:

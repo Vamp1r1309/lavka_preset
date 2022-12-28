@@ -1,6 +1,7 @@
 PAYMENT_TOKEN = 'live_BZGFoRB3_070p2NV0SqAZUMpcqfNJk8xhiN9zLWDMeg'
 SHOP_ID = '963893'
-
+# PAYMENT_TOKEN = 'test_b5Qx4NQ9xufGdn3bDYv6No4AZV_TGAPC1A29n9iL5Oo'#Lavkapresets
+# SHOP_ID = '968439'#lavkapresetstest
 BOT_TOKEN: str = '5981033563:AAF0JKJOMp5LflGXK2Y7GTeYFeBXvXlSCZQ'#Lavkapresets
 # BOT_TOKEN: str = '5678361086:AAEsTwVgqOAll7EEA_J7sNosSXyGqRlFF80'#lavkapresetstest
 
@@ -14,7 +15,7 @@ MSG: dict[str, str] = {
     'settingsPresets': 'Высылаю тебе подробную инструкцию по использованию пресетов😉',
     'video': 'BAACAgIAAxkBAAIIj2Oi1wizZEv86hCoXv62y7mlGJfEAAK1JAACG2kYSRBZ3HCpYbNKLAQ',
     'preset': 'Выбери подходящий вариант',
-    'successful': 'Платёж на сумму {} р. прошел успешно!\nНадеюсь, тебе понравится😉',
+    'successful': 'Платёж на сумму {} прошел успешно!\nНадеюсь, тебе понравится😉',
     'exitText': "Вы не завершили покупку, хотите продолжить?😊",
     'successfulMessage': 'Сообщения успешно разосланы'
 }
