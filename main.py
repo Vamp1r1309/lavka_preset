@@ -8,7 +8,7 @@ from config.config import BOT_TOKEN
 
 
 loop = asyncio.new_event_loop()
-bot = Bot(BOT_TOKEN, parse_mode='HTML')
+bot = Bot(BOT_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, loop=loop, storage=storage)
 

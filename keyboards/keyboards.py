@@ -15,22 +15,22 @@ keyboard_menu = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text='Набор из 5 пресетов🔥 499 р.', callback_data='combo', ),
+            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='combo', ),
         ],
         [
-            InlineKeyboardButton(text='пресет "NEW YEAR" 199 р.', callback_data='newYear'),
+            InlineKeyboardButton(text='пресет "NEW YEAR"', callback_data='newYear'),
         ],
         [
-            InlineKeyboardButton(text='пресет "MAGIC MOMENT" 199 р.', callback_data='magicMoment'),
+            InlineKeyboardButton(text='пресет "MAGIC MOMENT"', callback_data='magicMoment'),
         ],
         [
-            InlineKeyboardButton(text='пресет "COLD WINTER" 199 р.', callback_data='coldWinter'),
+            InlineKeyboardButton(text='пресет "COLD WINTER"', callback_data='coldWinter'),
         ],
         [
-            InlineKeyboardButton(text='пресет "COZY" 199 р.', callback_data='cozy'),
+            InlineKeyboardButton(text='пресет "COZY"', callback_data='cozy'),
         ],
         [
-            InlineKeyboardButton(text='пресет "CHRISTMAS MOOD" 199 р.', callback_data='christmasMood'),
+            InlineKeyboardButton(text='пресет "CHRISTMAS MOOD"', callback_data='christmasMood'),
         ],
     ],
 )

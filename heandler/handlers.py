@@ -91,7 +91,13 @@ async def byu_proccess(callback: types.CallbackQuery):
             row_width=2,
             inline_keyboard=[
                 [
-                    InlineKeyboardButton(text='Оплатить ' + DICTIONARY_PRESET[callback.data]['price'] + ' р.', callback_data='pay', url=payment_deatils['confirmation']['confirmation_url']),
+                    InlineKeyboardButton(text='Оплатить '
+                                         + DICTIONARY_PRESET[callback.data]['price_sell'][1] + '   '
+                                         + DICTIONARY_PRESET[callback.data]['striketh_text'],
+                                         callback_data='pay',
+                                         parse_mode='HTML',
+                                         url=payment_deatils['confirmation']['confirmation_url']
+                                         ),
                 ],
                 [
                     InlineKeyboardButton(text='Вернуться в меню', callback_data='menu'),
@@ -102,7 +108,7 @@ async def byu_proccess(callback: types.CallbackQuery):
         await bot.send_photo(callback.message.chat.id,
                             photo=DICTIONARY_PRESET[callback.data]['photo_url'],
                             caption=DICTIONARY_PRESET[callback.data]['name'] + ', отличный выбор😉',
-                            reply_markup=paymentsBTN)
+                            reply_markup=paymentsBTN, parse_mode='HTML')
         await callback.answer()
 
         if await check_payment(payment_deatils['id'], callback.message.chat.id):

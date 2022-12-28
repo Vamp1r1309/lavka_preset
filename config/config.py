@@ -23,6 +23,8 @@ MSG: dict[str, str] = {
 DICTIONARY_PRESET: dict = {
     'combo': {
         'name': 'Combo',
+        'striketh_text': '\u0336'.join('499₽'),
+        'price_sell': ['329', '329₽'],
         'price': '499',
         'photo_url': 'https://i.postimg.cc/pVCB5xWx/combo.jpg',
         'photo_height': 800,
@@ -34,6 +36,8 @@ DICTIONARY_PRESET: dict = {
     },
     'newYear': {
         'name': 'New Year',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
         'price': '199',
         'photo_url': 'https://i.postimg.cc/J0fvkL8b/newYear.jpg',
         'photo_height': 720,
@@ -43,6 +47,8 @@ DICTIONARY_PRESET: dict = {
     },
     'magicMoment': {
         'name': 'Magic Moment',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
         'price': '199',
         'photo_url': 'https://i.postimg.cc/Kjf3KZBW/magic-Moment.jpg',
         'photo_height': 720,
@@ -52,6 +58,8 @@ DICTIONARY_PRESET: dict = {
     },
     'coldWinter': {
         'name': 'Cold Winter',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
         'price': '199',
         'photo_url': 'https://i.postimg.cc/9QJ9cDZg/cold-Winter.jpg',
         'photo_height': 720,
@@ -61,6 +69,8 @@ DICTIONARY_PRESET: dict = {
     },
     'cozy': {
         'name': 'Cozy',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
         'price': '199',
         'photo_url': 'https://i.postimg.cc/50GkhV6Z/cozy.jpg',
         'photo_height': 720,
@@ -70,6 +80,8 @@ DICTIONARY_PRESET: dict = {
     },
     'christmasMood': {
         'name': 'Christmas Mood',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
         'price': '199',
         'photo_url': 'https://i.postimg.cc/Df9M57VG/cristmas-Mood.jpg',
         'photo_height': 720,

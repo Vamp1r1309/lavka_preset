@@ -10,7 +10,7 @@ def payments(item, chat_id):
 
     payment = Payment.create({
     "amount": {
-        "value": DICTIONARY_PRESET[item]['price'],
+        "value": DICTIONARY_PRESET[item]['price_sell'][0],
         "currency": "RUB"
     },
     "payment_method_data": {
