@@ -1,7 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-
 keyboardStart = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
@@ -10,12 +9,20 @@ keyboardStart = InlineKeyboardMarkup(
         ],
     ]
 )
-
-keyboard_menu = InlineKeyboardMarkup(
+keyboard_categories = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='combo', ),
+            InlineKeyboardButton(text='Предметные', callback_data='predmetny'),
+            InlineKeyboardButton(text='Зимние', callback_data='zima')
+        ],
+    ]
+)
+keyboard_menu_zima = InlineKeyboardMarkup(
+    row_width=2,
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='Зимнее combo', ),
         ],
         [
             InlineKeyboardButton(text='пресет "NEW YEAR"', callback_data='newYear'),
@@ -34,6 +41,29 @@ keyboard_menu = InlineKeyboardMarkup(
         ],
     ],
 )
+keyboard_menu_predmet = InlineKeyboardMarkup(
+    row_width=2,
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='Предметные combo', ),
+        ],
+        [
+            InlineKeyboardButton(text='пресет "Retro"', callback_data='retro'),
+        ],
+        [
+            InlineKeyboardButton(text='пресет "Tasty"', callback_data='tasty'),
+        ],
+        [
+            InlineKeyboardButton(text='пресет "Kodak"', callback_data='kodak'),
+        ],
+        [
+            InlineKeyboardButton(text='пресет "Film"', callback_data='film'),
+        ],
+        [
+            InlineKeyboardButton(text='пресет "Light"', callback_data='light'),
+        ],
+    ],
+)
 keyboardReturnMenu = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
@@ -46,7 +76,6 @@ keyboardReturnMenu = InlineKeyboardMarkup(
         ]
     ]
 )
-
 keyboardMenuAndHelp = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[

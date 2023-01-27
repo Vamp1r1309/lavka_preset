@@ -1,6 +1,7 @@
 from config.config import ADMIN_ID
 import sqlite3
 
+
 class DataBaseProducts:
 
     def __init__(self, db_file):

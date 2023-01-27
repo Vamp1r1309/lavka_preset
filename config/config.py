@@ -21,8 +21,8 @@ MSG: dict[str, str] = {
 }
 
 
-DICTIONARY_PRESET: dict = {
-    'combo': {
+DICTIONARY_PRESET_ZIMA: dict = {
+    'Зимнее combo': {
         'name': 'Combo',
         'striketh_text': '\u0336'.join('499₽'),
         'price_sell': ['329', '329₽'],
@@ -89,6 +89,78 @@ DICTIONARY_PRESET: dict = {
         'photo_width': 1280,
         'photo_size': 1250000,
         'file_name': 'BQACAgIAAxkBAAICnWOSAgf-CZobanHgYcp5v8UUgUq5AAIBKAACThqRSLQBtuTbpJUBKwQ'
+    },
+}
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DICTIONARY_PRESET_PREDMET: dict = {
+    'Предметные combo': {
+        'name': 'Combo',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/J0jSzPJm/combo-Predmet.jpg',
+        'photo_height': 800,
+        'photo_width': 600,
+        'photo_size': 1250000,
+        'file_name': ['BQACAgIAAxkBAAIPCWPT_ZHx2B9VV6r9_QeZLA5hFMPmAAKKJAACvjGgSqF9Yvta-jvMLQQ', 'BQACAgIAAxkBAAIPCGPT_Nr_UGolXlUXGrNMpilw8yx-AAKJJAACvjGgSl7IF6ZTH5V_LQQ',
+                      'BQACAgIAAxkBAAIPCmPT_gXxJavN_7SuM2i1ypGP8dMUAAKNJAACvjGgSlz-hvGzTUZLLQQ', 'BQACAgIAAxkBAAIPC2PT_kMactjOgDNeijTSzL9zZqUfAAKPJAACvjGgSnD_7pg527ipLQQ',
+                      'BQACAgIAAxkBAAIPDGPT_o6Ur2SiVNpTVc6AOSjVkGo-AAKRJAACvjGgSg8Katvyngf0LQQ']
+    },
+    'retro': {
+        'name': 'Retro',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/tJsQDSd3/retro.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIPCWPT_ZHx2B9VV6r9_QeZLA5hFMPmAAKKJAACvjGgSqF9Yvta-jvMLQQ'
+    },
+    'tasty': {
+        'name': 'Tasty',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/cJd6cbTg/tasty.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIPCGPT_Nr_UGolXlUXGrNMpilw8yx-AAKJJAACvjGgSl7IF6ZTH5V_LQQ'
+    },
+    'kodak': {
+        'name': 'Kodak',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/g0rj5ZFm/kodak.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIPCmPT_gXxJavN_7SuM2i1ypGP8dMUAAKNJAACvjGgSlz-hvGzTUZLLQQ'
+    },
+    'film': {
+        'name': 'Film',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/7LpHWtnn/film.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIPC2PT_kMactjOgDNeijTSzL9zZqUfAAKPJAACvjGgSnD_7pg527ipLQQ'
+    },
+    'light': {
+        'name': 'Light',
+        'striketh_text': '\u0336'.join('199₽'),
+        'price_sell': ['109', '109₽'],
+        'price': '199',
+        'photo_url': 'https://i.postimg.cc/J0FPNJL0/light.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIPDGPT_o6Ur2SiVNpTVc6AOSjVkGo-AAKRJAACvjGgSg8Katvyngf0LQQ'
     },
 
 }
