@@ -13,8 +13,8 @@ keyboard_categories = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
+            InlineKeyboardButton(text='Зимние', callback_data='zima'),
             InlineKeyboardButton(text='Предметные', callback_data='predmetny'),
-            InlineKeyboardButton(text='Зимние', callback_data='zima')
         ],
     ]
 )
