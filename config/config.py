@@ -19,7 +19,8 @@ MSG: dict[str, str] = {
     'exitText': "Вы не завершили покупку, хотите продолжить?😊",
     'successfulMessage': 'Сообщения успешно разосланы'
 }
-
+predmetPrice = ["449₽", "149₽"]
+zimaPrice = ["329₽", "109₽"]
 
 DICTIONARY_PRESET_ZIMA: dict = {
     'Зимнее combo': {
@@ -96,8 +97,6 @@ DICTIONARY_PRESET_ZIMA: dict = {
 DICTIONARY_PRESET_PREDMET: dict = {
     'Предметные combo': {
         'name': 'Combo',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109₽'],
         'price': '449',
         'photo_url': 'https://i.postimg.cc/J0jSzPJm/combo-Predmet.jpg',
         'photo_height': 800,
@@ -109,8 +108,6 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
     'retro': {
         'name': 'Retro',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109₽'],
         'price': '149',
         'photo_url': 'https://i.postimg.cc/tJsQDSd3/retro.jpg',
         'photo_height': 720,
@@ -120,8 +117,6 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
     'tasty': {
         'name': 'Tasty',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109₽'],
         'price': '149',
         'photo_url': 'https://i.postimg.cc/cJd6cbTg/tasty.jpg',
         'photo_height': 720,
@@ -131,8 +126,6 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
     'kodak': {
         'name': 'Kodak',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109₽'],
         'price': '149',
         'photo_url': 'https://i.postimg.cc/g0rj5ZFm/kodak.jpg',
         'photo_height': 720,
@@ -142,8 +135,6 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
     'film': {
         'name': 'Film',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109', '109₽'],
         'price': '149',
         'photo_url': 'https://i.postimg.cc/7LpHWtnn/film.jpg',
         'photo_height': 720,
@@ -153,8 +144,6 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
     'light': {
         'name': 'Light',
-        'striketh_text': '\u0336'.join('199₽'),
-        'price_sell': ['109', '109₽'],
         'price': '149',
         'photo_url': 'https://i.postimg.cc/J0FPNJL0/light.jpg',
         'photo_height': 720,

@@ -1,5 +1,5 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+from config.config import predmetPrice, zimaPrice
 
 keyboardStart = InlineKeyboardMarkup(
     row_width=2,
@@ -22,22 +22,22 @@ keyboard_menu_zima = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='Зимнее combo', ),
+            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥             {zimaPrice[0]}', callback_data='Зимнее combo', ),
         ],
         [
-            InlineKeyboardButton(text='пресет "NEW YEAR"', callback_data='newYear'),
+            InlineKeyboardButton(text=f'пресет "NEW YEAR"                     {zimaPrice[1]}', callback_data='newYear'),
         ],
         [
-            InlineKeyboardButton(text='пресет "MAGIC MOMENT"', callback_data='magicMoment'),
+            InlineKeyboardButton(text=f'пресет "MAGIC MOMENT"         {zimaPrice[1]}', callback_data='magicMoment'),
         ],
         [
-            InlineKeyboardButton(text='пресет "COLD WINTER"', callback_data='coldWinter'),
+            InlineKeyboardButton(text=f'пресет "COLD WINTER"              {zimaPrice[1]}', callback_data='coldWinter'),
         ],
         [
-            InlineKeyboardButton(text='пресет "COZY"', callback_data='cozy'),
+            InlineKeyboardButton(text=f'пресет "COZY"                               {zimaPrice[1]}', callback_data='cozy'),
         ],
         [
-            InlineKeyboardButton(text='пресет "CHRISTMAS MOOD"', callback_data='christmasMood'),
+            InlineKeyboardButton(text=f'пресет "CHRISTMAS MOOD"    {zimaPrice[1]}', callback_data='christmasMood'),
         ],
     ],
 )
@@ -45,22 +45,22 @@ keyboard_menu_predmet = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text='Набор из 5 пресетов🔥', callback_data='Предметные combo', ),
+            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥      {predmetPrice[0]}', callback_data='Предметные combo', ),
         ],
         [
-            InlineKeyboardButton(text='пресет "Retro"', callback_data='retro'),
+            InlineKeyboardButton(text=f'пресет "Retro"                       {predmetPrice[1]}', callback_data='retro'),
         ],
         [
-            InlineKeyboardButton(text='пресет "Tasty"', callback_data='tasty'),
+            InlineKeyboardButton(text=f'пресет "Tasty"                       {predmetPrice[1]}', callback_data='tasty'),
         ],
         [
-            InlineKeyboardButton(text='пресет "Kodak"', callback_data='kodak'),
+            InlineKeyboardButton(text=f'пресет "Kodak"                      {predmetPrice[1]}', callback_data='kodak'),
         ],
         [
-            InlineKeyboardButton(text='пресет "Film"', callback_data='film'),
+            InlineKeyboardButton(text=f'пресет "Film"                         {predmetPrice[1]}', callback_data='film'),
         ],
         [
-            InlineKeyboardButton(text='пресет "Light"', callback_data='light'),
+            InlineKeyboardButton(text=f'пресет "Light"                       {predmetPrice[1]}', callback_data='light'),
         ],
     ],
 )
