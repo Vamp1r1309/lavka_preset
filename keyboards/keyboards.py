@@ -1,5 +1,5 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from config.config import predmetPrice, zimaPrice
+from config.config import predmetPrice, zimaPrice, predmetNormalPrice
 
 keyboardStart = InlineKeyboardMarkup(
     row_width=2,
@@ -45,22 +45,22 @@ keyboard_menu_predmet = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥      {predmetPrice[0]}', callback_data='Предметные combo', ),
+            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥        {predmetNormalPrice[0]}\t\t" + predmetPrice[0], callback_data='Предметные combo', ),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Retro"                       {predmetPrice[1]}', callback_data='retro'),
+            InlineKeyboardButton(text=f'пресет "Retro"                                      {predmetPrice[1]}', callback_data='retro'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Tasty"                       {predmetPrice[1]}', callback_data='tasty'),
+            InlineKeyboardButton(text=f'пресет "Tasty"                                      {predmetPrice[1]}', callback_data='tasty'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Kodak"                      {predmetPrice[1]}', callback_data='kodak'),
+            InlineKeyboardButton(text=f'пресет "Kodak"                                     {predmetPrice[1]}', callback_data='kodak'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Film"                         {predmetPrice[1]}', callback_data='film'),
+            InlineKeyboardButton(text=f'пресет "Film"                                         {predmetPrice[1]}', callback_data='film'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Light"                       {predmetPrice[1]}', callback_data='light'),
+            InlineKeyboardButton(text=f'пресет "Light"                                        {predmetPrice[1]}', callback_data='light'),
         ],
     ],
 )

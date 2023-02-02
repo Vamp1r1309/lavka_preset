@@ -19,7 +19,8 @@ MSG: dict[str, str] = {
     'exitText': "Вы не завершили покупку, хотите продолжить?😊",
     'successfulMessage': 'Сообщения успешно разосланы'
 }
-predmetPrice = ["449₽", "149₽"]
+predmetPrice = ["379₽", "149₽"]
+predmetNormalPrice = ['\u0336'.join("449₽"), "149₽"]
 zimaPrice = ["329₽", "109₽"]
 
 DICTIONARY_PRESET_ZIMA: dict = {
@@ -97,7 +98,7 @@ DICTIONARY_PRESET_ZIMA: dict = {
 DICTIONARY_PRESET_PREDMET: dict = {
     'Предметные combo': {
         'name': 'Combo',
-        'price': '449',
+        'price': '379',
         'photo_url': 'https://i.postimg.cc/J0jSzPJm/combo-Predmet.jpg',
         'photo_height': 800,
         'photo_width': 600,
