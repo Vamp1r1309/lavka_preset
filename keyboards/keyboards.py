@@ -45,7 +45,7 @@ keyboard_menu_predmet = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥        {predmetNormalPrice[0]}\t\t" + predmetPrice[0], callback_data='Предметные combo', ),
+            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥                  {predmetPrice[0]}", callback_data='Предметные combo', ),
         ],
         [
             InlineKeyboardButton(text=f'пресет "Retro"                                      {predmetPrice[1]}', callback_data='retro'),

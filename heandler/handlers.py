@@ -165,7 +165,7 @@ async def byu_proccess_predmet(callback: types.CallbackQuery):
                 ],
             ]
         )
-        await bot.send_photo(callback.message.chat.id,
+        await bot.send_photo(chat_id=callback.message.chat.id,
                             photo=DICTIONARY_PRESET_PREDMET[callback.data]['photo_url'],
                             caption=DICTIONARY_PRESET_PREDMET[callback.data]['name'] + ', отличный выбор😉',
                             reply_markup=paymentsBTN, parse_mode='HTML')

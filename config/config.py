@@ -1,9 +1,9 @@
-PAYMENT_TOKEN = 'live_BZGFoRB3_070p2NV0SqAZUMpcqfNJk8xhiN9zLWDMeg'
-SHOP_ID = '963893'
-# PAYMENT_TOKEN = 'test_b5Qx4NQ9xufGdn3bDYv6No4AZV_TGAPC1A29n9iL5Oo'#Lavkapresets
-# SHOP_ID = '968439'#lavkapresetstest
-BOT_TOKEN: str = '5981033563:AAF0JKJOMp5LflGXK2Y7GTeYFeBXvXlSCZQ'#Lavkapresets
-# BOT_TOKEN: str = '5678361086:AAEsTwVgqOAll7EEA_J7sNosSXyGqRlFF80'#lavkapresetstest
+# PAYMENT_TOKEN = 'live_BZGFoRB3_070p2NV0SqAZUMpcqfNJk8xhiN9zLWDMeg'
+# SHOP_ID = '963893'
+PAYMENT_TOKEN = 'test_b5Qx4NQ9xufGdn3bDYv6No4AZV_TGAPC1A29n9iL5Oo'#Lavkapresets
+SHOP_ID = '968439'#lavkapresetstest
+# BOT_TOKEN: str = '5981033563:AAF0JKJOMp5LflGXK2Y7GTeYFeBXvXlSCZQ'#Lavkapresets
+BOT_TOKEN: str = '5678361086:AAEsTwVgqOAll7EEA_J7sNosSXyGqRlFF80'#lavkapresetstest
 
 ADMIN_ID = [696797613, 502602785]
 
@@ -19,7 +19,7 @@ MSG: dict[str, str] = {
     'exitText': "Вы не завершили покупку, хотите продолжить?😊",
     'successfulMessage': 'Сообщения успешно разосланы'
 }
-predmetPrice = ["379₽", "149₽"]
+predmetPrice = ["449₽", "149₽"]
 predmetNormalPrice = ['\u0336'.join("449₽"), "149₽"]
 zimaPrice = ["329₽", "109₽"]
 
@@ -98,7 +98,7 @@ DICTIONARY_PRESET_ZIMA: dict = {
 DICTIONARY_PRESET_PREDMET: dict = {
     'Предметные combo': {
         'name': 'Combo',
-        'price': '379',
+        'price': '449',
         'photo_url': 'https://i.postimg.cc/J0jSzPJm/combo-Predmet.jpg',
         'photo_height': 800,
         'photo_width': 600,
