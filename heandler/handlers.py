@@ -153,7 +153,7 @@ async def byu_proccess_predmet(callback: types.CallbackQuery):
             inline_keyboard=[
                 [
                     InlineKeyboardButton(text='Оплатить '
-                                         + DICTIONARY_PRESET_PREDMET[callback.data]['price'] + '₽',
+                                         + DICTIONARY_PRESET_PREDMET[callback.data]['price_sell'][0] + '₽',
                                          callback_data='pay',
                                          parse_mode='HTML',
                                          url=payment_deatils['confirmation']['confirmation_url']
@@ -175,7 +175,7 @@ async def byu_proccess_predmet(callback: types.CallbackQuery):
             data = await dbUser.check_presets(callback.message.chat.id)
             await bot.send_message(
                                 callback.message.chat.id,
-                                MSG['successful'].format(DICTIONARY_PRESET_PREDMET[callback.data]['price'] + '₽')
+                                MSG['successful'].format(DICTIONARY_PRESET_PREDMET[callback.data]['price_sell'][0] + '₽')
                                 )
             if type(DICTIONARY_PRESET_PREDMET[data]['file_name']) == list:
                 res = DICTIONARY_PRESET_PREDMET[data]['file_name']

@@ -19,7 +19,7 @@ MSG: dict[str, str] = {
     'exitText': "Вы не завершили покупку, хотите продолжить?😊",
     'successfulMessage': 'Сообщения успешно разосланы'
 }
-predmetPrice = ["449₽", "149₽"]
+predmetPrice = ["329₽", "109₽"]
 predmetNormalPrice = ['\u0336'.join("449₽"), "149₽"]
 zimaPrice = ["329₽", "109₽"]
 
@@ -99,6 +99,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'Предметные combo': {
         'name': 'Combo',
         'price': '449',
+        'price_sell': ['329', '329₽'],
         'photo_url': 'https://i.postimg.cc/J0jSzPJm/combo-Predmet.jpg',
         'photo_height': 800,
         'photo_width': 600,
@@ -110,6 +111,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'retro': {
         'name': 'Retro',
         'price': '149',
+        'price_sell': ['109', '109₽'],
         'photo_url': 'https://i.postimg.cc/tJsQDSd3/retro.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -119,6 +121,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'tasty': {
         'name': 'Tasty',
         'price': '149',
+        'price_sell': ['109', '109₽'],
         'photo_url': 'https://i.postimg.cc/cJd6cbTg/tasty.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -128,6 +131,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'kodak': {
         'name': 'Kodak',
         'price': '149',
+        'price_sell': ['109', '109₽'],
         'photo_url': 'https://i.postimg.cc/g0rj5ZFm/kodak.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -137,6 +141,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'film': {
         'name': 'Film',
         'price': '149',
+        'price_sell': ['109', '109₽'],
         'photo_url': 'https://i.postimg.cc/7LpHWtnn/film.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -146,6 +151,7 @@ DICTIONARY_PRESET_PREDMET: dict = {
     'light': {
         'name': 'Light',
         'price': '149',
+        'price_sell': ['109', '109₽'],
         'photo_url': 'https://i.postimg.cc/J0FPNJL0/light.jpg',
         'photo_height': 720,
         'photo_width': 1280,

@@ -22,22 +22,22 @@ keyboard_menu_zima = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥             {zimaPrice[0]}', callback_data='Зимнее combo', ),
+            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥                     {zimaPrice[0]}', callback_data='Зимнее combo', ),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "NEW YEAR"                     {zimaPrice[1]}', callback_data='newYear'),
+            InlineKeyboardButton(text=f'пресет "NEW YEAR"                              {zimaPrice[1]}', callback_data='newYear'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "MAGIC MOMENT"         {zimaPrice[1]}', callback_data='magicMoment'),
+            InlineKeyboardButton(text=f'пресет "MAGIC MOMENT"                  {zimaPrice[1]}', callback_data='magicMoment'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "COLD WINTER"              {zimaPrice[1]}', callback_data='coldWinter'),
+            InlineKeyboardButton(text=f'пресет "COLD WINTER"                       {zimaPrice[1]}', callback_data='coldWinter'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "COZY"                               {zimaPrice[1]}', callback_data='cozy'),
+            InlineKeyboardButton(text=f'пресет "COZY"                                        {zimaPrice[1]}', callback_data='cozy'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "CHRISTMAS MOOD"    {zimaPrice[1]}', callback_data='christmasMood'),
+            InlineKeyboardButton(text=f'пресет "CHRISTMAS MOOD"             {zimaPrice[1]}', callback_data='christmasMood'),
         ],
     ],
 )
