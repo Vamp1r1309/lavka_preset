@@ -22,22 +22,22 @@ keyboard_menu_zima = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥                     {zimaPrice[0]}', callback_data='Зимнее combo', ),
+            InlineKeyboardButton(text=f'Набор из 5 пресетов🔥               {predmetNormalPrice[0]}    {zimaPrice[0]}', callback_data='Зимнее combo', ),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "NEW YEAR"                              {zimaPrice[1]}', callback_data='newYear'),
+            InlineKeyboardButton(text=f'пресет "NEW YEAR"                       {predmetNormalPrice[1]}    {zimaPrice[1]}', callback_data='newYear'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "MAGIC MOMENT"                  {zimaPrice[1]}', callback_data='magicMoment'),
+            InlineKeyboardButton(text=f'пресет "MAGIC MOMENT"            {predmetNormalPrice[1]}    {zimaPrice[1]}', callback_data='magicMoment'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "COLD WINTER"                       {zimaPrice[1]}', callback_data='coldWinter'),
+            InlineKeyboardButton(text=f'пресет "COLD WINTER"                {predmetNormalPrice[1]}    {zimaPrice[1]}', callback_data='coldWinter'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "COZY"                                        {zimaPrice[1]}', callback_data='cozy'),
+            InlineKeyboardButton(text=f'пресет "COZY"                                 {predmetNormalPrice[1]}    {zimaPrice[1]}', callback_data='cozy'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "CHRISTMAS MOOD"             {zimaPrice[1]}', callback_data='christmasMood'),
+            InlineKeyboardButton(text=f'пресет "CHRISTMAS MOOD"       {predmetNormalPrice[1]}    {zimaPrice[1]}', callback_data='christmasMood'),
         ],
     ],
 )
@@ -45,22 +45,22 @@ keyboard_menu_predmet = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥                  {predmetPrice[0]}", callback_data='Предметные combo', ),
+            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥            {predmetNormalPrice[0]}    {predmetPrice[0]}", callback_data='Предметные combo', ),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Retro"                                      {predmetPrice[1]}', callback_data='retro'),
+            InlineKeyboardButton(text=f'пресет "Retro"                               {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='retro'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Tasty"                                      {predmetPrice[1]}', callback_data='tasty'),
+            InlineKeyboardButton(text=f'пресет "Tasty"                               {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='tasty'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Kodak"                                     {predmetPrice[1]}', callback_data='kodak'),
+            InlineKeyboardButton(text=f'пресет "Kodak"                              {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='kodak'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Film"                                         {predmetPrice[1]}', callback_data='film'),
+            InlineKeyboardButton(text=f'пресет "Film"                                  {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='film'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Light"                                        {predmetPrice[1]}', callback_data='light'),
+            InlineKeyboardButton(text=f'пресет "Light"                                {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='light'),
         ],
     ],
 )

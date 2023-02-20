@@ -31,7 +31,7 @@ def payments_predmet(item, chat_id):
 
     payment = Payment.create({
     "amount": {
-        "value": DICTIONARY_PRESET_PREDMET[item]['price'],
+        "value": DICTIONARY_PRESET_PREDMET[item]['price_sell'][0],
         "currency": "RUB"
     },
     "payment_method_data": {

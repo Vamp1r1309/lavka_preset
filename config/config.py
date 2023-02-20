@@ -20,7 +20,7 @@ MSG: dict[str, str] = {
     'successfulMessage': 'Сообщения успешно разосланы'
 }
 predmetPrice = ["329₽", "109₽"]
-predmetNormalPrice = ['\u0336'.join("449₽"), "149₽"]
+predmetNormalPrice = ['\u0336'.join("449₽"), '\u0336'.join("149₽")]
 zimaPrice = ["329₽", "109₽"]
 
 DICTIONARY_PRESET_ZIMA: dict = {
