@@ -1,7 +1,12 @@
 import json
 from yookassa import Configuration,Payment
-from config.config import DICTIONARY_PRESET_ZIMA,DICTIONARY_PRESET_PREDMET, SHOP_ID, PAYMENT_TOKEN
 import asyncio
+from config.config import (
+                           DICTIONARY_PRESET_ZIMA,
+                           DICTIONARY_PRESET_PREDMET,
+                           DICTIONARY_PRESET_SPRING,
+                           SHOP_ID,
+                           PAYMENT_TOKEN)
 
 Configuration.account_id = SHOP_ID
 Configuration.secret_key = PAYMENT_TOKEN
@@ -44,6 +49,28 @@ def payments_predmet(item, chat_id):
     "metadata": {"chat_id": chat_id},
     "capture": True,
     "description": "Оплата пресета " + DICTIONARY_PRESET_PREDMET[item]['name']
+    })
+
+    return json.loads(payment.json())
+
+
+def payments_spring(item, chat_id):
+
+    payment = Payment.create({
+    "amount": {
+        "value": DICTIONARY_PRESET_SPRING[item]['price_sell'][0],
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card"
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://t.me/lavkaPresets_bot"
+    },
+    "metadata": {"chat_id": chat_id},
+    "capture": True,
+    "description": "Оплата пресета " + DICTIONARY_PRESET_SPRING[item]['name']
     })
 
     return json.loads(payment.json())

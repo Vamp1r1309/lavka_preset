@@ -160,3 +160,70 @@ DICTIONARY_PRESET_PREDMET: dict = {
     },
 
 }
+
+
+DICTIONARY_PRESET_SPRING: dict = {
+    'Весеннее combo': {
+        'name': 'Combo',
+        'price': '449',
+        'price_sell': ['329', '329₽'],
+        'photo_url': 'https://i.postimg.cc/CKmbxDLQ/Combo.jpg',
+        'photo_height': 800,
+        'photo_width': 600,
+        'photo_size': 1250000,
+        'file_name': ['BQACAgIAAxkBAAIWeGP-bAibQcoXLffuAceB8ddd1hxuAAKYJgACH1P4S_R-jRe55jOFLgQ', 'BQACAgIAAxkBAAIWeWP-bEX26X-rAAHBr2XgjJ4mLxbSyAACmyYAAh9T-EuYL6qmoN4lQC4E',
+                      'BQACAgIAAxkBAAIWemP-bG9N1PJn2Gnul-pbJdtfz455AAKcJgACH1P4SyZH_R1hiqfCLgQ', 'BQACAgIAAxkBAAIWe2P-bJ9FEUfZBkZN5C2rrX3JUy5sAAKdJgACH1P4S-XSIDWzNIETLgQ',
+                      'BQACAgIAAxkBAAIWfGP-bMD8nrWEnk_IWf51dFn7rE_pAAKeJgACH1P4S9YvbSjABZ8yLgQ']
+    },
+    'crocus': {
+        'name': 'Crocus',
+        'price': '149',
+        'price_sell': ['109', '109₽'],
+        'photo_url': 'https://i.postimg.cc/4y4MhpzH/crocus.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIWeGP-bAibQcoXLffuAceB8ddd1hxuAAKYJgACH1P4S_R-jRe55jOFLgQ'
+    },
+    'lily': {
+        'name': 'Lily',
+        'price': '149',
+        'price_sell': ['109', '109₽'],
+        'photo_url': 'https://i.postimg.cc/HkKgDvbZ/Lily.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIWeWP-bEX26X-rAAHBr2XgjJ4mLxbSyAACmyYAAh9T-EuYL6qmoN4lQC4E'
+    },
+    'viola': {
+        'name': 'Viola',
+        'price': '149',
+        'price_sell': ['109', '109₽'],
+        'photo_url': 'https://i.postimg.cc/1ztfMdsv/Viola.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIWemP-bG9N1PJn2Gnul-pbJdtfz455AAKcJgACH1P4SyZH_R1hiqfCLgQ'
+    },
+    'freesia': {
+        'name': 'Freesia',
+        'price': '149',
+        'price_sell': ['109', '109₽'],
+        'photo_url': 'https://i.postimg.cc/TYN8gNNd/Freesia.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIWe2P-bJ9FEUfZBkZN5C2rrX3JUy5sAAKdJgACH1P4S-XSIDWzNIETLgQ'
+    },
+    'primula': {
+        'name': 'Primula',
+        'price': '149',
+        'price_sell': ['109', '109₽'],
+        'photo_url': 'https://i.postimg.cc/3RGrc56F/Primula.jpg',
+        'photo_height': 720,
+        'photo_width': 1280,
+        'photo_size': 1250000,
+        'file_name': 'BQACAgIAAxkBAAIWfGP-bMD8nrWEnk_IWf51dFn7rE_pAAKeJgACH1P4S9YvbSjABZ8yLgQ'
+    },
+
+}
