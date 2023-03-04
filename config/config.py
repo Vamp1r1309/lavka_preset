@@ -22,6 +22,7 @@ MSG: dict[str, str] = {
 predmetPrice = ["329₽", "109₽"]
 predmetNormalPrice = ['\u0336'.join("449₽"), '\u0336'.join("149₽")]
 zimaPrice = ["329₽", "109₽"]
+PRICE_SPRING = ['490₽', '179₽']
 
 DICTIONARY_PRESET_ZIMA: dict = {
     'Зимнее combo': {
@@ -165,8 +166,8 @@ DICTIONARY_PRESET_PREDMET: dict = {
 DICTIONARY_PRESET_SPRING: dict = {
     'Весеннее combo': {
         'name': 'Combo',
-        'price': '449',
-        'price_sell': ['329', '329₽'],
+        'price': '490',
+        'price_sell': ['490', '490₽'],
         'photo_url': 'https://i.postimg.cc/CKmbxDLQ/Combo.jpg',
         'photo_height': 800,
         'photo_width': 600,
@@ -177,8 +178,8 @@ DICTIONARY_PRESET_SPRING: dict = {
     },
     'crocus': {
         'name': 'Crocus',
-        'price': '149',
-        'price_sell': ['109', '109₽'],
+        'price': '179',
+        'price_sell': ['179', '179₽'],
         'photo_url': 'https://i.postimg.cc/4y4MhpzH/crocus.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -187,8 +188,8 @@ DICTIONARY_PRESET_SPRING: dict = {
     },
     'lily': {
         'name': 'Lily',
-        'price': '149',
-        'price_sell': ['109', '109₽'],
+        'price': '179',
+        'price_sell': ['179', '179₽'],
         'photo_url': 'https://i.postimg.cc/HkKgDvbZ/Lily.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -197,8 +198,8 @@ DICTIONARY_PRESET_SPRING: dict = {
     },
     'viola': {
         'name': 'Viola',
-        'price': '149',
-        'price_sell': ['109', '109₽'],
+        'price': '179',
+        'price_sell': ['179', '179₽'],
         'photo_url': 'https://i.postimg.cc/1ztfMdsv/Viola.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -207,8 +208,8 @@ DICTIONARY_PRESET_SPRING: dict = {
     },
     'freesia': {
         'name': 'Freesia',
-        'price': '149',
-        'price_sell': ['109', '109₽'],
+        'price': '179',
+        'price_sell': ['179', '179₽'],
         'photo_url': 'https://i.postimg.cc/TYN8gNNd/Freesia.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -217,8 +218,8 @@ DICTIONARY_PRESET_SPRING: dict = {
     },
     'primula': {
         'name': 'Primula',
-        'price': '149',
-        'price_sell': ['109', '109₽'],
+        'price': '179',
+        'price_sell': ['179', '179₽'],
         'photo_url': 'https://i.postimg.cc/3RGrc56F/Primula.jpg',
         'photo_height': 720,
         'photo_width': 1280,

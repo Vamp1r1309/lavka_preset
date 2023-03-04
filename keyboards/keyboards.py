@@ -4,7 +4,7 @@ from config.config import (predmetPrice,
                            predmetNormalPrice,
                            DICTIONARY_PRESET_ZIMA,
                            DICTIONARY_PRESET_PREDMET,
-                           DICTIONARY_PRESET_SPRING)
+                           PRICE_SPRING)
 
 keyboardStart = InlineKeyboardMarkup(
     row_width=2,
@@ -76,22 +76,22 @@ keyboard_menu_spring = InlineKeyboardMarkup(
     row_width=2,
     inline_keyboard=[
         [
-            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥      {predmetNormalPrice[0]}    {predmetPrice[0]}", callback_data='Весеннее combo', ),
+            InlineKeyboardButton(text=f"Набор из 5 пресетов🔥       {PRICE_SPRING[0]}", callback_data='Весеннее combo', ),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Crocus"                    {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='crocus'),
+            InlineKeyboardButton(text=f'пресет "Crocus"                      {PRICE_SPRING[1]}', callback_data='crocus'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Lily"                          {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='lily'),
+            InlineKeyboardButton(text=f'пресет "Lily"                             {PRICE_SPRING[1]}', callback_data='lily'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Viola"                       {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='viola'),
+            InlineKeyboardButton(text=f'пресет "Viola"                          {PRICE_SPRING[1]}', callback_data='viola'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Freesia"                    {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='freesia'),
+            InlineKeyboardButton(text=f'пресет "Freesia"                      {PRICE_SPRING[1]}', callback_data='freesia'),
         ],
         [
-            InlineKeyboardButton(text=f'пресет "Primula"                  {predmetNormalPrice[1]}    {predmetPrice[1]}', callback_data='primula'),
+            InlineKeyboardButton(text=f'пресет "Primula"                     {PRICE_SPRING[1]}', callback_data='primula'),
         ],
     ],
 
