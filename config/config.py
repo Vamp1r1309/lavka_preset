@@ -176,7 +176,7 @@ DICTIONARY_PRESET_SPRING: dict = {
         'photo_size': 1250000,
         'file_name': ['BQACAgIAAxkBAAIZpGQkr8xVbHze7uSLdkdtCAdeZ-VvAAJFLwACFpMgSXfuIg-U7Zu3LwQ', 'BQACAgIAAxkBAAIZpmQksDCeiTTQMx2u022uOQ5kYDjPAAJLLwACFpMgSXQYhAZ-1sHCLwQ',
                       'BQACAgIAAxkBAAIWemP-bG9N1PJn2Gnul-pbJdtfz455AAKcJgACH1P4SyZH_R1hiqfCLgQ', 'BQACAgIAAxkBAAIZpWQksAxQ7fT4ExvkQ1nJssiA48ReAAJJLwACFpMgSXZy8v_FJGN7LwQ',
-                      'BQACAgIAAxkBAAIZp2QksFStaC5uGZxTGuDdMYYs4ivoAAJOLwACFpMgSXx1aAs-3nEoLwQ']
+                      'BQACAgIAAxkBAAIZzmQkvDgwDvf46YvwgSBHSBk9An0OAAJfLwACFpMgScECJ_fzdmAbLwQ']
     },
     'crocus': {
         'name': 'Crocus',
@@ -226,7 +226,7 @@ DICTIONARY_PRESET_SPRING: dict = {
         'photo_height': 720,
         'photo_width': 1280,
         'photo_size': 1250000,
-        'file_name': 'BQACAgIAAxkBAAIZp2QksFStaC5uGZxTGuDdMYYs4ivoAAJOLwACFpMgSXx1aAs-3nEoLwQ'
+        'file_name': 'BQACAgIAAxkBAAIZzmQkvDgwDvf46YvwgSBHSBk9An0OAAJfLwACFpMgScECJ_fzdmAbLwQ'
     },
 
 }
