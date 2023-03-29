@@ -2,7 +2,7 @@ PAYMENT_TOKEN = 'live_BZGFoRB3_070p2NV0SqAZUMpcqfNJk8xhiN9zLWDMeg'
 SHOP_ID = '963893'
 # PAYMENT_TOKEN = 'test_b5Qx4NQ9xufGdn3bDYv6No4AZV_TGAPC1A29n9iL5Oo'#Lavkapresets
 # SHOP_ID = '968439'#lavkapresetstest
-BOT_TOKEN: str = '5981033563:AAF0JKJOMp5LflGXK2Y7GTeYFeBXvXlSCZQ'#Lavkapresets
+BOT_TOKEN: str = '5981033563:AAFhE4GCHnV-wAkTjRRxdMvD12SchTaUueA'#Lavkapresets
 # BOT_TOKEN: str = '5678361086:AAEsTwVgqOAll7EEA_J7sNosSXyGqRlFF80'#lavkapresetstest
 
 ADMIN_ID = [696797613, 502602785]
@@ -22,7 +22,9 @@ MSG: dict[str, str] = {
 predmetPrice = ["329₽", "109₽"]
 predmetNormalPrice = ['\u0336'.join("449₽"), '\u0336'.join("149₽")]
 zimaPrice = ["329₽", "109₽"]
-PRICE_SPRING = ['490₽', '179₽']
+PRICE_SPRING = ['\u0336'.join('490₽'), '\u0336'.join('179₽')]
+PRICE_SPRING_COMBO = ['329', '329₽']
+PRICE_SELL_SPRING = ['129', '129₽']
 
 DICTIONARY_PRESET_ZIMA: dict = {
     'Зимнее combo': {
@@ -167,39 +169,39 @@ DICTIONARY_PRESET_SPRING: dict = {
     'Весеннее combo': {
         'name': 'Combo',
         'price': '490',
-        'price_sell': ['490', '490₽'],
+        'price_sell': ['329', '329₽'],
         'photo_url': 'https://i.postimg.cc/CKmbxDLQ/Combo.jpg',
         'photo_height': 800,
         'photo_width': 600,
         'photo_size': 1250000,
-        'file_name': ['BQACAgIAAxkBAAIWeGP-bAibQcoXLffuAceB8ddd1hxuAAKYJgACH1P4S_R-jRe55jOFLgQ', 'BQACAgIAAxkBAAIWeWP-bEX26X-rAAHBr2XgjJ4mLxbSyAACmyYAAh9T-EuYL6qmoN4lQC4E',
-                      'BQACAgIAAxkBAAIWemP-bG9N1PJn2Gnul-pbJdtfz455AAKcJgACH1P4SyZH_R1hiqfCLgQ', 'BQACAgIAAxkBAAIWe2P-bJ9FEUfZBkZN5C2rrX3JUy5sAAKdJgACH1P4S-XSIDWzNIETLgQ',
-                      'BQACAgIAAxkBAAIWfGP-bMD8nrWEnk_IWf51dFn7rE_pAAKeJgACH1P4S9YvbSjABZ8yLgQ']
+        'file_name': ['BQACAgIAAxkBAAIZpGQkr8xVbHze7uSLdkdtCAdeZ-VvAAJFLwACFpMgSXfuIg-U7Zu3LwQ', 'BQACAgIAAxkBAAIZpmQksDCeiTTQMx2u022uOQ5kYDjPAAJLLwACFpMgSXQYhAZ-1sHCLwQ',
+                      'BQACAgIAAxkBAAIWemP-bG9N1PJn2Gnul-pbJdtfz455AAKcJgACH1P4SyZH_R1hiqfCLgQ', 'BQACAgIAAxkBAAIZpWQksAxQ7fT4ExvkQ1nJssiA48ReAAJJLwACFpMgSXZy8v_FJGN7LwQ',
+                      'BQACAgIAAxkBAAIZqGQksG-wh3_VYNun_ttaV8p4WTqSAAJPLwACFpMgSQTcgdoj4YrALwQ']
     },
     'crocus': {
         'name': 'Crocus',
         'price': '179',
-        'price_sell': ['179', '179₽'],
+        'price_sell': ['129', '129₽'],
         'photo_url': 'https://i.postimg.cc/4y4MhpzH/crocus.jpg',
         'photo_height': 720,
         'photo_width': 1280,
         'photo_size': 1250000,
-        'file_name': 'BQACAgIAAxkBAAIWeGP-bAibQcoXLffuAceB8ddd1hxuAAKYJgACH1P4S_R-jRe55jOFLgQ'
+        'file_name': 'BQACAgIAAxkBAAIZpGQkr8xVbHze7uSLdkdtCAdeZ-VvAAJFLwACFpMgSXfuIg-U7Zu3LwQ'
     },
     'lily': {
         'name': 'Lily',
         'price': '179',
-        'price_sell': ['179', '179₽'],
+        'price_sell': ['129', '129₽'],
         'photo_url': 'https://i.postimg.cc/HkKgDvbZ/Lily.jpg',
         'photo_height': 720,
         'photo_width': 1280,
         'photo_size': 1250000,
-        'file_name': 'BQACAgIAAxkBAAIWeWP-bEX26X-rAAHBr2XgjJ4mLxbSyAACmyYAAh9T-EuYL6qmoN4lQC4E'
+        'file_name': 'BQACAgIAAxkBAAIZpmQksDCeiTTQMx2u022uOQ5kYDjPAAJLLwACFpMgSXQYhAZ-1sHCLwQ'
     },
     'viola': {
         'name': 'Viola',
         'price': '179',
-        'price_sell': ['179', '179₽'],
+        'price_sell': ['129', '129₽'],
         'photo_url': 'https://i.postimg.cc/1ztfMdsv/Viola.jpg',
         'photo_height': 720,
         'photo_width': 1280,
@@ -209,22 +211,22 @@ DICTIONARY_PRESET_SPRING: dict = {
     'freesia': {
         'name': 'Freesia',
         'price': '179',
-        'price_sell': ['179', '179₽'],
+        'price_sell': ['129', '129₽'],
         'photo_url': 'https://i.postimg.cc/TYN8gNNd/Freesia.jpg',
         'photo_height': 720,
         'photo_width': 1280,
         'photo_size': 1250000,
-        'file_name': 'BQACAgIAAxkBAAIWe2P-bJ9FEUfZBkZN5C2rrX3JUy5sAAKdJgACH1P4S-XSIDWzNIETLgQ'
+        'file_name': 'BQACAgIAAxkBAAIZpWQksAxQ7fT4ExvkQ1nJssiA48ReAAJJLwACFpMgSXZy8v_FJGN7LwQ'
     },
     'primula': {
         'name': 'Primula',
         'price': '179',
-        'price_sell': ['179', '179₽'],
+        'price_sell': ['129', '129₽'],
         'photo_url': 'https://i.postimg.cc/3RGrc56F/Primula.jpg',
         'photo_height': 720,
         'photo_width': 1280,
         'photo_size': 1250000,
-        'file_name': 'BQACAgIAAxkBAAIWfGP-bMD8nrWEnk_IWf51dFn7rE_pAAKeJgACH1P4S9YvbSjABZ8yLgQ'
+        'file_name': 'BQACAgIAAxkBAAIZqGQksG-wh3_VYNun_ttaV8p4WTqSAAJPLwACFpMgSQTcgdoj4YrALwQ'
     },
 
 }
