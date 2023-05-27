@@ -1,4 +1,3 @@
-from config.config import ADMIN_ID
 import sqlite3
 
 
