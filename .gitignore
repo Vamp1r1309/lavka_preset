@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-bot/baseDir/user/lavka_presets.db
+lavka_presets.db
 
 # C extensions
 *.so
@@ -110,7 +110,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+debug.log
 # Spyder project settings
 .spyderproject
 .spyproject

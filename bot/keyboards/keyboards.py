@@ -14,8 +14,11 @@ keyboard_categories = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(text=f'Пресеты', callback_data='one_combo'),
-            InlineKeyboardButton(text=f'Английский', callback_data='Английский Язык')
+            InlineKeyboardButton(text=f'Английский', callback_data='Английский Язык'),
         ],
+        [
+            InlineKeyboardButton(text=f'Методичка по instagram', callback_data='Методичка'),
+        ]
     ]
 )
 keyboard_menu = InlineKeyboardMarkup(

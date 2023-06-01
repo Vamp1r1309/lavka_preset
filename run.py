@@ -1,12 +1,11 @@
 import asyncio
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-import logging
-
-
+from loguru import logger
 from bot.config import BOT_TOKEN
 
-logging.basicConfig(level=logging.INFO)
+
+logger.add("debug.log", format="{time} {level} {message}", level="DEBUG", rotation="22:00", compression="zip")
 
 loop = asyncio.new_event_loop()
 bot = Bot(BOT_TOKEN, parse_mode=types.ParseMode.HTML)

@@ -4,7 +4,7 @@ import sqlite3
 
 class DataBase:
 
-    def __init__(self, db_file: object) -> object:
+    def __init__(self, db_file: object) -> None:
         self.connect = sqlite3.connect(db_file)
         self.cursor = self.connect.cursor()
 
@@ -38,4 +38,4 @@ class DataBase:
 
 
     async def update_null_users(self, user_id):
-        return self.cursor.execute(("""UPDATE users SET bouth=(?), label=(?), presets=(?) WHERE user_id=(?)""", [False,1,'', user_id]))
+        return self.cursor.execute("""UPDATE users SET bouth=(?), label=(?), presets=(?) WHERE user_id=(?)""", [False,1,'', user_id])
